@@ -9,32 +9,29 @@ Maybe you can mention me or this repo in the acknowledgements too
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>Photography Growth Platform</h1>
   
-  <p>
-    An awesome README template for your projects! 
-  </p>
-  
-  
+  https://github.com/WarrantLeader/photography-growth-platform/releases
+
 <!-- Badges -->
 <p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
+  <a href="https://github.com/WarrantLeader/photography-growth-platform/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/WarrantLeader/photography-growth-platform" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/WarrantLeader/photography-growth-platform" alt="last update" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
+  <a href="https://github.com/WarrantLeader/photography-growth-platform/network/members">
+    <img src="https://img.shields.io/github/forks/WarrantLeader/photography-growth-platform" alt="forks" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
+  <a href="https://github.com/WarrantLeader/photography-growth-platform/stargazers">
+    <img src="https://img.shields.io/github/stars/WarrantLeader/photography-growth-platform" alt="stars" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
+  <a href="https://github.com/WarrantLeader/photography-growth-platform/issues/">
+    <img src="https://img.shields.io/github/issues/WarrantLeader/photography-growth-platform" alt="open issues" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
+  <a href="https://github.com/WarrantLeader/photography-growth-platform/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/WarrantLeader/photography-growth-platform.svg" alt="license" />
   </a>
 </p>
    
@@ -52,9 +49,9 @@ Maybe you can mention me or this repo in the acknowledgements too
 <br />
 
 <!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
+# Table of Contents
 
-- [About the Project](#star2-about-the-project)
+- [About the Project](#about-the-project)
   * [Screenshots](#camera-screenshots)
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
@@ -78,16 +75,10 @@ Maybe you can mention me or this repo in the acknowledgements too
   
 
 <!-- About the Project -->
-## :star2: About the Project
+## About the Project
 
 
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
-</div>
-
+<p> A business development platform for photographers to discover potential clients, manage outreach campaigns, track leads, and analyse booking opportunities.<p/>
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
