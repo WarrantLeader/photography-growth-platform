@@ -7,8 +7,6 @@ Don't forget to give this project a star for additional support ;)
 Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
-
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
   <h1>Photography Growth Platform</h1>
 
 <!-- Badges -->
@@ -162,7 +160,7 @@ Phase 4:
 ## Contributing
 
 <a href="https://github.com/WarrantLeader/photography-growth-platform/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
+  <img src="https://contrib.rocks/image?repo=WarrantLeader/photography-growth-platform" />
 </a>
 
 
