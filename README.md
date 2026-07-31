@@ -1,13 +1,6 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
+# Photography Growth Platform
 
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-<div align="center">
-  <h1>Photography Growth Platform</h1>
+A business development platform for photographers to discover potential clients, manage outreach campaigns, track leads, and analyse booking opportunities.
 
 <!-- Badges -->
 <p>
@@ -40,149 +33,97 @@ Maybe you can mention me or this repo in the acknowledgements too
   <span> · </span>
     <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
   </h4>
-</div>
 
-<br />
+---
 
-<!-- Table of Contents -->
-# Table of Contents
+## Why?
 
-- [About the Project](#about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+Photography businesses often spend hours researching potential clients and tracking outreach through spreadsheets, notes, and emails.
 
-  
+Existing photography platforms such as Pixieset excel at website hosting and gallery delivery, but they are not designed to manage business development before a booking occurs.
 
-<!-- About the Project -->
-## About the Project
+This project aims to solve that problem by providing a dedicated platform for lead management, outreach tracking, and business analytics.
 
+---
 
-<p> 
-  Overview
-  
-  A business development platform for photographers to discover potential clients, manage outreach campaigns, track leads, and analyse booking opportunities.
+## Features
 
-  Problem
+### Planned
 
-  Photography businesses often struggle with finding new clients and tracking outreach.
-
-  Existing photography platforms focus mainly on client delivery after a booking has happened.
-
-  This project focuses on the business development process before a booking.
-<p/>
-
-<!-- TechStack -->
-## TechStack
-
-<details>
-  <summary>Front End</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Backend</summary>
-  <ul>
-    <li><a href="https://fastapi.tiangolo.com/">FastApi</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-## Features:
-Currently planned:
-- Lead manage ment
-- Client database
+- Lead database
+- Contact management
 - Outreach tracking
 - Sales pipeline
 - Business analytics
 - Lead scoring
+- Client history
+- Optional gallery integration
 
-<!-- Roadmap -->
+---
+
+## Architecture
+
+Frontend
+
+- React
+
+Backend
+
+- FastAPI
+
+Database
+
+- PostgreSQL
+
+Deployment
+
+- Docker
+
+---
+
+## Project Structure
+
+src/
+backend/
+frontend/
+tests/
+docs/
+
+---
+
 ## Roadmap
 
-Phase 1:
-* [ ] Lead management
+### Phase 1
 
-Phase 2:
-* [ ] Sales pipeline
+- [ ] Database
+- [ ] Authentication
+- [ ] Lead management
 
-Phase 3:
-* [ ] Analytics dashboard
+### Phase 2
 
-Phase 4:
-* [ ] Automation features
+- [ ] Sales pipeline
+- [ ] Search
+- [ ] Filtering
 
-<!-- Contributing -->
-## Contributing
+### Phase 3
 
-<a href="https://github.com/WarrantLeader/photography-growth-platform/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=WarrantLeader/photography-growth-platform" />
-</a>
+- [ ] Analytics dashboard
+- [ ] Charts
+- [ ] Conversion metrics
 
+### Phase 4
 
-Contributions are always welcome!
+- [ ] Automation
+- [ ] AI features
 
-See `contributing.md` for ways to get started.
+---
 
-<!-- FAQ -->
-## FAQ
+## Getting Started
 
-- Question 1
+Coming soon.
 
-  + Answer 1
+---
 
-- Question 2
+## Licence
 
-  + Answer 2
-
-
-<!-- License -->
-## License
-
-Distributed under the MIT License. See LICENSE.txt for more information.
+MIT
