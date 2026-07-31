@@ -76,9 +76,11 @@ Maybe you can mention me or this repo in the acknowledgements too
 
 <p> 
   Overview
+  
   A business development platform for photographers to discover potential clients, manage outreach campaigns, track leads, and analyse booking opportunities.
 
   Problem
+
   Photography businesses often struggle with finding new clients and tracking outreach.
 
   Existing photography platforms focus mainly on client delivery after a booking has happened.
