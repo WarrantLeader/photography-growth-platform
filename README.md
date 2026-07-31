@@ -10,8 +10,6 @@ Maybe you can mention me or this repo in the acknowledgements too
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
   <h1>Photography Growth Platform</h1>
-  
-  https://github.com/WarrantLeader/photography-growth-platform/releases
 
 <!-- Badges -->
 <p>
