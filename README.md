@@ -1,129 +1,51 @@
-# Photography Growth Platform
+# Mr T Captures Studio CRM
 
-A business development platform for photographers to discover potential clients, manage outreach campaigns, track leads, and analyse booking opportunities.
+React, TypeScript and Tailwind photography CRM with an orange and charcoal interface.
 
-<!-- Badges -->
-<p>
-  <a href="https://github.com/WarrantLeader/photography-growth-platform/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/WarrantLeader/photography-growth-platform" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/WarrantLeader/photography-growth-platform" alt="last update" />
-  </a>
-  <a href="https://github.com/WarrantLeader/photography-growth-platform/network/members">
-    <img src="https://img.shields.io/github/forks/WarrantLeader/photography-growth-platform" alt="forks" />
-  </a>
-  <a href="https://github.com/WarrantLeader/photography-growth-platform/stargazers">
-    <img src="https://img.shields.io/github/stars/WarrantLeader/photography-growth-platform" alt="stars" />
-  </a>
-  <a href="https://github.com/WarrantLeader/photography-growth-platform/issues/">
-    <img src="https://img.shields.io/github/issues/WarrantLeader/photography-growth-platform" alt="open issues" />
-  </a>
-  <a href="https://github.com/WarrantLeader/photography-growth-platform/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/WarrantLeader/photography-growth-platform.svg" alt="license" />
-  </a>
-</p>
-   
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
+## Run the preview locally
 
----
+Use Node.js 22.12+ or a compatible newer release.
 
-## Why?
+```sh
+npm ci
+npm run dev
+```
 
-Photography businesses often spend hours researching potential clients and tracking outreach through spreadsheets, notes, and emails.
+Enter workspace opens `/login` for Apple, Microsoft or email-and-password sign-in and account creation. Without configured authentication, provider buttons show Setup needed and Explore demo opens example records. The demo cannot send invoices or collect money.
 
-Existing photography platforms such as Pixieset excel at website hosting and gallery delivery, but they are not designed to manage business development before a booking occurs.
-
-This project aims to solve that problem by providing a dedicated platform for lead management, outreach tracking, and business analytics.
-
----
+```sh
+npm run build
+npm run preview
+```
 
 ## Features
 
-### Planned
+- Responsive workspace and mobile drawer with scroll locking and safe-area spacing.
+- Leads, campaigns, projects, calculated dashboard figures, tasks, activity and insights.
+- Apple/Microsoft OAuth, email/password authentication, and password recovery through Supabase for the standalone deployment.
+- Invoice drafts, line items in GBP, previews, search and status filters.
+- Python invoice API with server-validated accounts, explicit administrator allowlist, SQLite persistence, Stripe hosted invoices, send confirmation, retry protection and signed payment notifications.
+- Settings, light/dark appearance and JSON export of non-invoice CRM records.
+- Read-only NAS folder browsing, file search, previews and downloads from a locally mounted share.
 
-- Lead database
-- Contact management
-- Outreach tracking
-- Sales pipeline
-- Business analytics
-- Lead scoring
-- Client history
-- Optional gallery integration
+## Activate sign-in and invoice payments
 
----
+Read `INVOICES_AND_LOGIN.md`. It contains the required configuration, Docker deployment steps, account and payment limitations, webhook setup and testing instructions.
 
-## Architecture
+No Supabase project or Stripe account is connected in the downloadable source or hosted preview. Account registration, Apple/Microsoft OAuth, email/password login, password recovery, client email delivery and Apple Pay require that setup and live verification. Secrets belong in Supabase or the backend environment. Never put them in frontend `VITE_` variables.
 
-Frontend
+The static hosted preview does not run the Python backend. Deploy that backend to your NAS or another HTTPS host and connect the standalone frontend. Native Sites platform access is separate from standalone authentication.
 
-- React
+## Data
 
-Backend
+Non-invoice CRM records remain browser-local and are separated by account ID. Demo drafts are browser-local. Live invoices are kept in the backend SQLite database and Stripe. The invoice API restricts each administrator to their own records. It does not yet implement shared team billing, multi-device CRM sync, the shared NAS file backend or automatic SD-card backups.
 
-- FastAPI
+Existing demo records under `mrt-studio-v1` remain untouched. New account-separated records use `mrt-studio-v1:<user-id>`. Settings exports only the current account's non-invoice CRM records. Back up the SQLite Docker volume for invoices. No user data is included in the source ZIP.
 
-Database
+## NAS files
 
-- PostgreSQL
+Mount your NAS SMB share in Finder or File Explorer over your existing network or Tailscale configuration, then choose the project folder in Project Files. Desktop Chrome and Edge support direct directory browsing on secure origins or localhost. Other browsers use a flat folder import. Folder permissions are session-only and need reconnecting after leaving the file route or reloading. Files are not uploaded by this feature. RAW files download to their native application.
 
-Deployment
+## Validation
 
-- Docker
-
----
-
-## Project Structure
-
-src/
-backend/
-frontend/
-tests/
-docs/
-
----
-
-## Roadmap
-
-### Phase 1
-
-- [ ] Database
-- [ ] Authentication
-- [ ] Lead management
-
-### Phase 2
-
-- [ ] Sales pipeline
-- [ ] Search
-- [ ] Filtering
-
-### Phase 3
-
-- [ ] Analytics dashboard
-- [ ] Charts
-- [ ] Conversion metrics
-
-### Phase 4
-
-- [ ] Automation
-- [ ] AI features
-
----
-
-## Getting Started
-
-Coming soon.
-
----
-
-## Licence
-
-MIT
+The TypeScript/Vite production build passes. Seven mocked backend tests cover totals, validation, owner isolation, auth enforcement, missing configuration, duplicate sending, edit locking and webhook signatures/status handling. Browser checks cover entry-to-login routing and demo invoice creation/preview with sending disabled. Actual provider login, client email delivery, live NAS access and real Apple Pay payment require your accounts and devices.
